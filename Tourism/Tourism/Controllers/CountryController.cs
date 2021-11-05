@@ -40,7 +40,7 @@ namespace Tourism.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> PutCountry(int id, [FromBody] Country country)
+        public async Task<ActionResult> PutCountry(int id, [FromBody] Country country) //moze i samo [From Body] bez id-a ali moramo da proverimo da li postoji
         {
             if (id != country.id)
             {
